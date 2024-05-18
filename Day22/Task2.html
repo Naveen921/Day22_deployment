@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <style>
+            #parent_div{
+                display: grid;
+                background-color: red;
+                /* width: 800px; */
+                height: 800px;
+                grid-template-columns:200px 200px 200px;
+                grid-template-rows:150px 150px 150px 150px 150px;
+                border: 2px solid black;
+                align-content: center;
+                justify-content: center;
+                text-align: center;
+            }
+
+            #parent_div div{
+                background-color: aqua;
+                border: 2px solid black;
+                align-content: center;
+            }
+
+            #parent_div>#header{
+                grid-column: 1/4;
+            }
+
+            #parent_div>#nav{
+                grid-column: 1/4;
+            }
+
+            #parent_div>#content{
+                grid-column: 2/4;
+            }
+
+            #parent_div>#footer{
+                grid-column: 1/4;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div id="parent_div">
+            <div id="header"><h1>Heading Section</h1></div>
+            <div id="nav"><h1>Navigation Bar</h1></div>
+            <div id="index"><h1>Index</h1></div>
+            <div id="content"><h1>Content Section</h1></div>
+            <div id="footer"><h1>Footer Section</h1></div>
+        </div>
+    </body>
+</html>

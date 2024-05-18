@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+
+            .container{
+                display: grid;
+                border: 3px solid black;
+                width: 100%;
+                height: 100vh;
+                padding: 10px;
+                gap: 10px;
+                grid-template-areas: 'A B B C'
+                'A D E F'
+                'A G H F';
+                grid-template-columns: 200px 1fr 1fr 200px;
+                grid-template-rows: 200px 1fr 1fr;
+            }
+
+            .item1{
+                grid-area: A;
+                background-color: green;
+            }
+
+            .item2{
+                grid-area: B;
+                background-color: green;
+            }
+
+            .item3{
+                grid-area: C;
+                background-color:red;
+            }
+
+            .item4{
+                grid-area: D;
+                background-color: darkgoldenrod;
+            }
+
+            .item5{
+                grid-area: E;
+                background-color: red;
+            }
+
+            .item6{
+                grid-area: F;
+                background-color: green;
+            }
+
+            .item7{
+                grid-area: G;
+                background-color: red;
+            }
+
+            .item8{
+                grid-area: H;
+                background-color: darkgoldenrod;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="item1"></div>
+            <div class="item2"></div>
+            <div class="item3"></div>
+            <div class="item4"></div>
+            <div class="item5"></div>
+            <div class="item6"></div>
+            <div class="item7"></div>
+            <div class="item8"></div>
+        </div>
+    </body>
+
+</html>
